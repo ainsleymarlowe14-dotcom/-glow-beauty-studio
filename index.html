@@ -4,29 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glow Beauty Studio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #7b2d5f;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: #f7d9e9;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #7b2d5f;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #7b2d5f;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #7b2d5f;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .service h3 {
+      color: #7b2d5f;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #7b2d5f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Glow Beauty Studio</h1>
 
-  <p>Beauty, confidence, and self-care in one place.</p>
+  <header>
+    <h1>Glow Beauty Studio</h1>
+    <p>Beauty, confidence & self-care</p>
+  </header>
 
-  <h2>Our Services</h2>
+  <div class="hero">
+    <h2>Feel Beautiful. Feel Confident.</h2>
+    <p>
+      Professional beauty services designed to help you look
+      and feel your absolute best.
+    </p>
+    <a href="#contact" class="button">Book an Appointment</a>
+  </div>
 
-  <ul>
-    <li>Makeup</li>
-    <li>Hair Styling</li>
-    <li>Nail Services</li>
-    <li>Beauty Consultation</li>
-  </ul>
+  <section>
+    <h2>Our Services</h2>
 
-  <h2>About Us</h2>
-  <p>
-    Glow Beauty Studio helps clients look and feel their best
-    with quality beauty services and personalized care.
-  </p>
+    <div class="services">
 
-  <h2>Contact</h2>
-  <p>Ready to book? Contact Glow Beauty Studio today.</p>
+      <div class="service">
+        <h3>Makeup</h3>
+        <p>Beautiful makeup for everyday looks and special occasions.</p>
+      </div>
+
+      <div class="service">
+        <h3>Hair Styling</h3>
+        <p>Stylish and personalized hair services for every occasion.</p>
+      </div>
+
+      <div class="service">
+        <h3>Nail Services</h3>
+        <p>Professional nail care with a clean and beautiful finish.</p>
+      </div>
+
+      <div class="service">
+        <h3>Beauty Consultation</h3>
+        <p>Personalized beauty advice to help you find your perfect look.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      Glow Beauty Studio is dedicated to providing quality beauty
+      services in a welcoming and comfortable environment.
+      Our goal is simple: help every client leave feeling confident.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Ready to Glow?</h2>
+    <p>Contact us today to book your appointment.</p>
+    <br>
+    <a href="mailto:hello@glowbeautystudio.com" class="button">
+      Contact Us
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Glow Beauty Studio. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
